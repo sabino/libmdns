@@ -37,7 +37,7 @@ version = "0.4"
 version = "0.2"
 
 [dependencies.nix]
-version = "0.10"
+version = "0.16.1"
 
 [dependencies.quick-error]
 version = "1.2"
