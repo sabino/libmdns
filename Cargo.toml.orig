@@ -1,0 +1,29 @@
+[package]
+name = "libmdns"
+version = "0.2.4"
+authors = ["Will Stott <willstott101+libmdns@gmail.com>"]
+
+description = "mDNS Responder library for building discoverable LAN services in Rust"
+repository = "https://github.com/librespot-org/libmdns"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+byteorder = "1.2"
+futures = "0.1"
+libc = "0.2"
+log = "0.4"
+multimap = "0.4"
+net2 = "0.2"
+nix = "0.10"
+rand = "0.5"
+tokio-core = "0.1"
+quick-error = "1.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+socket2 = "0.2.2"
+
+[dev-dependencies]
+env_logger = "0.5"
